@@ -37,7 +37,7 @@ def extract_args(argv):
     output = '.'
     linesperfile = None
     try:
-        opts, args = getopt.getopt(argv,"hi:o:l:",["ifile=","output=","linesperfile="])
+        opts, _ = getopt.getopt(argv,"hi:o:l:",["ifile=","output=","linesperfile="])
         for opt, arg in opts:
             if opt == '-h':
                 print_help()
